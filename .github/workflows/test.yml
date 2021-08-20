@@ -4,8 +4,6 @@
 name: Tests
 on:
   pull_request:
-    branches:
-      - master
     paths-ignore:
       - 'README.md'
   push:
@@ -55,7 +53,6 @@ jobs:
       matrix:
         # list whatever Terraform versions here you would like to support
         terraform:
-          - '1.0.4'
           - '1.0.5'
     steps:
 
